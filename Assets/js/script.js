@@ -8,15 +8,15 @@ let timeOfTasks = document.getElementsByClassName("time");
 document.getElementById("currentDay").innerHTML = date;
 
 //timeblocks selected
-let nine = document.getElementByID("9");
-let ten = document.getElementByID("10");
-let eleven = document.getElementByID("11");
-let twelve = document.getElementByID("12");
-let onePm = document.getElementByID("13");
-let twoPm = document.getElementByID("14");
-let threePm = document.getElementByID("15");
-let fourPm = document.getElementByID("16");
-let fivePm = document.getElementByID("17");
+let nine = document.getElementById("9");
+let ten = document.getElementById("10");
+let eleven = document.getElementById("11");
+let twelve = document.getElementById("12");
+let onePm = document.getElementById("13");
+let twoPm = document.getElementById("14");
+let threePm = document.getElementById("15");
+let fourPm = document.getElementById("16");
+let fivePm = document.getElementById("17");
 
 
 
@@ -52,3 +52,14 @@ $(document).ready(function(){
 
 });
 
+// let startPage = function() {
+//     let addNine = JSON.parse(localStorage.getItem())
+//     let addTen = JSON.parse(localStorage.getItem())
+//     let addEleven = JSON.parse(localStorage.getItem())
+//     let addTwelve = JSON.parse(localStorage.getItem())
+//     let addOnePm = JSON.parse(localStorage.getItem())
+//     let addTwoPm = JSON.parse(localStorage.getItem())
+//     let addThreePm = JSON.parse(localStorage.getItem())
+//     let addFourPm = JSON.parse(localStorage.getItem())
+//     let addFivePm = JSON.parse(localStorage.getItem())
+// }
