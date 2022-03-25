@@ -33,16 +33,12 @@ let fivePm = document.getElementById("17");
 
 $(document).ready(function(){
 
-    //button click to save
+    //button click to save to local storage
     $("button").click(function() {
         //set input text as variable
-        let description = $(this).siblings(".input-text").val();
-        localStorage.setItem(description);
-    })
-    //save time to local storage
-    $("button").click(function() {
-        let taskTime = $(this).parent().attr("id");
-        localStorage.setItem(taskTime);
+        let description = $(this).parent("div").prev("div").children("input-text").val();        
+        let taskTime = $(this).parent("div").prev("id").val();
+        localStorage.setItem(description, taskTime);
     })
 
 
