@@ -18,16 +18,10 @@ let threePm = document.getElementById("input-15");
 let fourPm = document.getElementById("input-16");
 let fivePm = document.getElementById("input-17");
 
+//get time class
 let timeId = document.getElementsByClassName("time");
 
 
-//date.toString().innerHTML = pageDate;
-
-//if (time <= timeOfTasks) {
-    
-//}
-
-//
 
 
 $(document).ready(function(){
@@ -41,15 +35,21 @@ $(document).ready(function(){
 
         
     })
+
+    //function to change background based on time
     $(".time").each(function () {
         let itemTime = $(this).attr("id");
         console.log(itemTime)
+
+            //past
         if (itemTime < time) {
             $(this).addClass("bg-danger");
+
+            //future
         } else if(itemTime > time) {
             $(this).css("background", "green");
 
-
+            //current
         } else {
             $(this).css("background", "grey");
 
@@ -57,35 +57,8 @@ $(document).ready(function(){
     })
 
 
-    let timeBg = function(timeId, time) {
-            
-    }
-
-timeBg()
-    //set background colors
-    // if (timeBackground < time) {
-    //     $(".time").each(function() {
-    //         let currentBlock = $(".time").attr("id");
-    //         let timeBackground = $(".time").attr("id");
-    //         timeBackground.addClass("bg-danger");
-    //         })
-    //     }
-    // })
-    
-    // if (taskTime < time) {
-    //     //let taskTime = $(this).parent("div").prev().attr("id");
-
-    //     let background = $(this).parent().prev().children("textArea");
-    //     background.addClass("bg-danger");
-    // }
-
-
-    //for
-
-    //if(time < )
-
     //get local storage elements and display them to the page
-    
+
     let startPage = function() {
         let addNine = localStorage.getItem("9");
         nine.textContent= addNine;
